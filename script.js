@@ -15,7 +15,6 @@ async function getJoke() {
   }
 
   const res = await fetch('https://icanhazdadjoke.com', config)
-  console.log(res)
   const data = await res.json()
 
   h1.innerHTML = data.joke
